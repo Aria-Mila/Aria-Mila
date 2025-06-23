@@ -1,6 +1,6 @@
 const encodedLinks = {
-  a: "aHR0cHM6Ly9teW0uZmFucy9BcmlhbWlsYQ==",           // https://mym.fans/Ariamila
-  b: "aHR0cHM6Ly9vbmx5ZmFhbnMuY29tL0FyaWFtaWxh"         // https://onlyfans.com/Ariamila
+  a: "aHR0cHM6Ly9teW0uZmFucy9BcmlhbWlsYQ==", 
+  b: "aHR0cHM6Ly9vbmx5ZmFhbnMuY29tL0FyaWFtaWx="   
 };
 
 function decodeBase64(str) {
