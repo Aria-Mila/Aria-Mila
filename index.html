@@ -67,6 +67,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WL8T8V29"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+  <script>
+const encodedLinks = {
+  a: "aHR0cHM6Ly9teW0uZmFucy9BcmlhbWlsYQ==",
+  b: "aHR0cHM6Ly9vbmx5ZmFucy5jb20vQXJpYW1pbGE="
+};
+
+function decodeBase64(str) {
+  return atob(str);
+}
+
+document.querySelectorAll('[data-link]').forEach(el => {
+  el.addEventListener('click', e => {
+    const key = el.getAttribute('data-link');
+    const url = decodeBase64(encodedLinks[key]);
+    if (url) {
+      // Push to dataLayer
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+        event: 'button_click',
+        link_key: key,
+        link_url: url
+      });
+
+      // Redirection
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  });
+});
+</script>
+
   <div class="container">
     <h1>Bienvenue sur mon Linktree</h1>
 
