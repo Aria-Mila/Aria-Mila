@@ -11,7 +11,6 @@ function decodeBase64(str) {
     return null;
   }
 }
-
 document.querySelectorAll('[data-link]').forEach(el => {
   el.addEventListener('click', e => {
     const key = el.getAttribute('data-link');
