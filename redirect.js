@@ -1,6 +1,6 @@
 const encodedLinks = {
   a: "aHR0cHM6Ly9teW0uZmFucy9BcmlhbWlsYQ==", 
-  b: "aHR0cHM6Ly9vbmx5ZmFhbnMuY29tL0FyaWFtaWx="   
+  b: "aHR0cHM6Ly9vbmx5ZmFucy5jb20vQXJpYW1pbGE="  
 };
 
 function decodeBase64(str) {
