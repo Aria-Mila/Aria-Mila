@@ -56,5 +56,19 @@
       window.location.href = url;
     }
   </script>
+  <script>
+  function goToContent() {
+    // Push dans le dataLayer
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      event: 'confirm_age',
+      user_confirmed: true
+    });
+
+    // Redirection
+    const url = atob("aHR0cHM6Ly9vbmx5ZmFucy5jb20vYXJpYW1pbGEx");
+    window.location.href = url;
+  }
+  </script>
 </body>
 </html>
