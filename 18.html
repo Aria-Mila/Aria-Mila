@@ -51,12 +51,6 @@
   </div>
 
   <script>
-    function goToContent() {
-      const url = atob("aHR0cHM6Ly9vbmx5ZmFucy5jb20vYXJhbWlsYTE=");
-      window.location.href = url;
-    }
-  </script>
-  <script>
   function goToContent() {
     // Push dans le dataLayer
     window.dataLayer = window.dataLayer || [];
@@ -65,10 +59,11 @@
       user_confirmed: true
     });
 
-    // Redirection
-    const url = atob("aHR0cHM6Ly9vbmx5ZmFucy5jb20vYXJpYW1pbGEx");
+    // Redirection vers l'URL décodée en base64
+    const url = atob("aHR0cHM6Ly9vbmx5ZmFucy5jb20vYXJhbWlsYTE=");
     window.location.href = url;
   }
-  </script>
+</script>
+
 </body>
 </html>
