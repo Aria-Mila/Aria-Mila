@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avertissement +18</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+    }
+    .box {
+      background: #222;
+      padding: 30px;
+      border-radius: 16px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+    .btn {
+      padding: 12px 24px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .btn-enter {
+      background: #ff3366;
+      color: white;
+    }
+    .btn-exit {
+      background: #ccc;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
 
+  <div class="box">
+    <h1>Contenu réservé aux adultes</h1>
+    <p>Ce contenu est destiné à un public majeur (+18). En cliquant sur "Entrer", vous confirmez avoir plus de 18 ans.</p>
+    <button class="btn btn-enter" onclick="goToContent()">Entrer</button>
+    <button class="btn btn-exit" onclick="window.location.href='index.html'">Quitter</button>
+  </div>
+
+  <script>
+    function goToContent() {
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+        event: 'confirm_age',
+        user_confirmed: true
+      });
+
+      const url = atob("aHR0cHM6Ly9vbmx5ZmFucy5jb20vYXJpYW1pbGEx");
+      window.location.href = url;
+    }
+  </script>
+
+</body>
+</html>
