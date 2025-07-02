@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /18.html
+Disallow: /19.html
