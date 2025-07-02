@@ -9,22 +9,21 @@
   })(window,document,'script','dataLayer','GTM-WL8T8V29');</script>
   <!-- End Google Tag Manager -->
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L25C4HG9M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9L25C4HG9M');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L25C4HG9M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9L25C4HG9M');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mon Linktree Stylé</title>
+  <title>Aria Mila - Accès Privé</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      background: linear-gradient(135deg, #667eea, #764ba2);
+      background: radial-gradient(ellipse at top, #1a1a2e 0%, #16213e 100%);
       font-family: 'Poppins', sans-serif;
       color: #fff;
       display: flex;
@@ -34,40 +33,55 @@
       flex-direction: column;
       padding: 20px;
     }
-    .container {
-      background: rgba(0,0,0,0.3);
-      padding: 40px 30px;
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
       border-radius: 20px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
-      width: 320px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+      padding: 40px 30px;
+      max-width: 350px;
+      width: 100%;
       text-align: center;
     }
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 20px;
+    }
     h1 {
-      margin-bottom: 30px;
+      margin: 10px 0 20px;
+      font-size: 1.9rem;
       font-weight: 600;
-      font-size: 1.8rem;
+    }
+    p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-bottom: 25px;
     }
     .btn {
-      display: block;
-      background: #ff3366;
-      color: white;
+      background: linear-gradient(90deg, #ff3366, #ff758c);
       padding: 14px 20px;
-      margin: 15px 0;
-      border-radius: 12px;
+      border-radius: 30px;
+      color: white;
       font-weight: 600;
       text-decoration: none;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      box-shadow: 0 4px 12px rgba(255, 51, 102, 0.5);
-      user-select: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 14px rgba(255, 51, 102, 0.4);
     }
     .btn:hover {
-      background: #e62e5c;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 51, 102, 0.6);
     }
     .footer {
-      margin-top: 25px;
-      font-size: 0.8rem;
-      opacity: 0.7;
+      margin-top: 30px;
+      font-size: 0.75rem;
+      opacity: 0.6;
     }
   </style>
 </head>
@@ -76,25 +90,16 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WL8T8V29"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <div class="wrapper">
-        <div class="card">
-            <img src="aria-photo.png" alt="Aria Mila" class="avatar">
-            <h1>@aria.mila</h1>
-            <p>Contenu exclusif réservé aux abonnés</p>
-            <a href="https://onlyfans.com/aria.mila" class="btn">
-                <span class="emoji">👀</span> Accès privé OnlyFans
-            </a>
-        </div>
-    </div>
-    <div class="container">
-        <h1>@aria.mila</h1>
-        <img src="aria-photo.png" alt="Aria Mila" class="avatar" style="width: 200px; border-radius: 10%; margin-bottom: 20px;"><br>
-    <a class="btn" href="18.html">Mon accès privé 👀</a>
-    </div>
-    
-    <div class="footer">&copy; 2025 Aria - Linktree perso</div>
 
-  <!-- Script placé ici pour que le DOM existe déjà -->
+  <div class="card">
+    <img src="aria-photo.png" alt="Aria Mila" class="avatar">
+    <h1>@aria.mila</h1>
+    <p>Contenu exclusif réservé aux abonnés</p>
+    <a href="https://onlyfans.com/aria.mila" class="btn">👀 Accès privé OnlyFans</a>
+  </div>
+
+  <div class="footer">&copy; 2025 Aria - Linktree perso</div>
+
   <script>
     const encodedLinks = {
       a: "aHR0cHM6Ly9teW0uZmFucy9BcmlhbWlsYQ==",
